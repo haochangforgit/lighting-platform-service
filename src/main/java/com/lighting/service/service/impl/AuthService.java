@@ -27,7 +27,7 @@ public class AuthService implements IAuthService
 	{
 		Collection<GrantedAuthority> grantedAuthoritys = new ArrayList<GrantedAuthority>();
 		
-		grantedAuthoritys.add(new GrantedAuthorityImpl("ROLE_ADMIN"));
+		grantedAuthoritys.add(new GrantedAuthorityImpl("ROLE_USER"));
 		
 		return grantedAuthoritys;
 	}
