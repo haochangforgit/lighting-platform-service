@@ -2,15 +2,15 @@ package com.lighting.service.service.impl;
 
 import org.springframework.stereotype.Service;
 
-import com.lighting.service.service.IAuthService;
+import com.lighting.service.service.IRoleService;
 
 /***
  * 权限service
  * @author changhao
  *
  */
-@Service("authService")
-public class AuthService implements IAuthService
+@Service("roleService")
+public class RoleService implements IRoleService
 {
 	
 }

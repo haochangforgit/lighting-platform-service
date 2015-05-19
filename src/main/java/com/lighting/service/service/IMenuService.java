@@ -6,7 +6,7 @@ package com.lighting.service.service;
  * @author changhao
  *
  */
-public interface IUserService
+public interface IMenuService
 {
 
 }
