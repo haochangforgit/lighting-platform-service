@@ -1,7 +1,7 @@
 package com.lighting.service.service;
 
-import com.lighting.platform.base.dao.Page;
-import com.lighting.platform.base.dao.PageConfig;
+import java.util.List;
+
 import com.lighting.platform.base.entity.Menu;
 
 
@@ -17,5 +17,5 @@ public interface IMenuService
 	 * @param menu
 	 * @return
 	 */
-	Page<Menu> pageQueryMenus(Menu menu,PageConfig pageConfig);
+	List<Menu> queryMenus(Menu menu);
 }

@@ -1,12 +1,12 @@
 package com.lighting.service.service.impl;
 
 
+import java.util.List;
+
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;
 
-import com.lighting.platform.base.dao.Page;
-import com.lighting.platform.base.dao.PageConfig;
 import com.lighting.platform.base.entity.Menu;
 import com.lighting.service.dao.MenuDao;
 import com.lighting.service.service.IMenuService;
@@ -30,8 +30,8 @@ public class MenuService implements IMenuService
 	 * @param menu
 	 * @return
 	 */
-	public Page<Menu> pageQueryMenus(Menu menu, PageConfig pageConfig)
+	public List<Menu> queryMenus(Menu menu)
 	{
-		return menuDao.pageQueryMenus(menu, pageConfig);
+		return menuDao.queryMenus(menu);
 	}
 }
